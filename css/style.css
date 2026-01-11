@@ -136,7 +136,7 @@ header {
 
 .button{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     color: #FFFFFF;
     background-color: var(--color-primary-dark);
     padding: 15px 39px;
@@ -200,7 +200,6 @@ header {
 }
 
 .work-section__box {
-
     border-radius: 70px;
     padding: 71px 67px 0;
     background-color: var(--color-primary-dark);
@@ -209,5 +208,85 @@ header {
 .box__img {
     transform: translateY(5px);
 }
+
+/* services-section */
+.services-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-section__description,
+.services-section__title {
+    margin-bottom: 20px;
+}
+
+.services-section__title {
+    text-align: center;
+    max-width: 420px;
+}
+
+.services-section__text {
+    font-size: 22px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 80px;
+    max-width: 460px;
+}
+
+.services-section__content {
+    display: flex;
+    gap: 40px
+}
+
+.services-section__meditation,
+.services-section__therapy {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 60px;
+    border-radius: 60px;
+}
+
+.services-section__meditation {
+    position: relative;
+    background-color: var(--color-primary-light);
+}
+
+.services-section__therapy {
+    background-color: #FFFFFF;
+}
+
+.services-section__img {
+    position: absolute;
+    right:0;
+}
+
+
+.services-section__subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    max-width: 360px;
+}
+
+.services-section__subtext {
+    font-size: 20px;
+    max-width: 295px;
+}
+
+.services-section__subtitle, 
+.services-section__subtext{
+    margin-bottom: 35px;
+}
+
+.services-section__btn {
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 15px 39px;
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 100px;
+}
+
 
 
