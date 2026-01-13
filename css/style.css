@@ -7,6 +7,7 @@ body {
     font-family: 'Bricolage Grotesque', sans-serif;
     margin: 0;
     line-height: 1.2;
+    letter-spacing: 0.5px;
     background-color: var(--color-secondary-light);
     color: var(--color-primary-dark);
 }
@@ -130,7 +131,7 @@ header {
 .hero-section__text {
     font-size: 24px;
     margin-bottom: 45px;
-    max-width: 525px;
+    max-width: 564px;
     text-align: center;
 }
 
@@ -235,46 +236,54 @@ header {
 }
 
 .services-section__content {
-    display: flex;
-    gap: 40px
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 40px; 
 }
 
-.services-section__meditation,
-.services-section__therapy {
+.services-section__card-meditation,
+.services-section__card-therapy,
+.services-section__card-coach {
     display: flex;
     flex-direction: column;
-    padding: 75px 60px;
+    padding-top: 75px;
+    padding-left: 60px;
     border-radius: 60px;
 }
 
-.services-section__meditation {
+.services-section__card-meditation {
     position: relative;
+    padding-right: 180px;
+    width: 100%;
     background-color: var(--color-primary-light);
 }
 
-.services-section__therapy {
+.services-section__card-therapy,
+.services-section__card-coach {
     background-color: #FFFFFF;
 }
 
 .services-section__img {
     position: absolute;
-    right:0;
+    right: 52px;
 }
 
 
-.services-section__subtitle {
+.services-section__card-title {
     font-size: 40px;
     font-weight: 600;
     max-width: 360px;
 }
 
-.services-section__subtext {
+.services-section__card-text {
     font-size: 20px;
     max-width: 295px;
 }
 
-.services-section__subtitle, 
-.services-section__subtext{
+.services-section__card-title, 
+.services-section__card-description,
+.services-section__card-text {
     margin-bottom: 35px;
 }
 
@@ -286,7 +295,216 @@ header {
     padding: 15px 39px;
     border: 1px solid var(--color-primary-dark);
     border-radius: 100px;
+    margin-bottom: 78px;
 }
 
+.services-section__card-coach {
+    align-items: start;
+    position: relative;
+    padding-right: 575px;
+    grid-column: 1 / -1;
+    background-color: #FFFFFF;
+}
+
+.services-section__card-coach-title {
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.services-section__card-description {
+    font-size: 20px;
+    line-height: 1.3;
+    width: 617px;
+}
+
+.card-span {
+    display: block;
+    margin-bottom: 26px;
+}
+
+.card-button {
+    margin-bottom: 78px;
+}
+
+.card__img img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 60px;
+}
+
+/*testimonals-section */
+.testimonals-section {
+    padding: 150px 0;
+}
+
+.testimionals-section__container {
+    display: flex;
+    gap: 114px;
+}
+
+.testimonals-section__content {
+   width: 590px; 
+   position: relative;
+}
+
+.testimonals-section__title {
+    width: 440px;
+}
+
+.testimonals__description,
+.testimonals-section__title {
+    margin-bottom: 35px;
+
+}
+
+.testimonals-section__text {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 476px;
+    margin-bottom: 50px;
+}
+
+/* swiper */
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.testimionals-section__slider {
+    overflow: visible;
+}
+
+.swiper-slide {
+    max-width: 393px;
+}
+
+.slide__item {
+    padding: 65px 50px 60px 50px;
+    box-sizing: border-box;
+    max-width: 393px;
+    font-size: 20px;
+    background-color: var(--color-primary-light);
+    border-radius: 60px;
+}
+
+.slide-text {
+    margin-bottom: 86px;
+    max-width: 293px;
+}
+
+.arrow {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 54px;
+    height: 54px;
+    padding: 20px 17px;
+}
+
+.swiper-button-left {
+    background-color: #FFFFFF;
+}
+
+.swiper-button-right {
+    margin-left: 74px;
+    background-color: var(--color-primary-dark);
+}
+
+/* partners-section */
+.partners-section__container{
+    display: flex;
+    gap: 64px;
+    padding: 55px 50px;
+    width: 1240px;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 60px;
+}
+
+.partners-section__text {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* resources-section */
+.resources-section {
+    padding-top: 120px 
+}
+
+.resources-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.resources-section__description, 
+.resources-section__title{
+    margin-bottom: 20px;
+}
+
+.resources-section__title {
+    max-width: 440px;
+}
+
+.resources-section__title,
+.resources-section__text {
+    text-align: center;
+}
+
+.resources-section__text {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 476px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.resources-section__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 70px;
+    background-color: #FFFFFF;
+    border-radius: 60px;
+    width: 387px;
+}
+
+.card__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    max-width: 287px;
+    text-align: center;
+}
+
+.card__text {
+    font-size: 18px;
+    max-width: 307px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.card__button {
+    padding: 15px 39px;
+    font-size: 20px;
+    font-weight: 600;
+    width: fit-content;
+    align-self: center;
+    border-radius: 100px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #EFC01D;
+}
 
 

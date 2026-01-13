@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -86,11 +88,11 @@
                     Discover expert guidance for a healthier mind and balanced life.
                 </p>
                 <div class="services-section__content">
-                    <div class="services-section__meditation">
-                        <h3 class="services-section__subtitle">
+                    <div class="services-section__card-meditation">
+                        <h3 class="services-section__card-title">
                             Mindfulness & Meditation
                         </h3>
-                        <p class="services-section__subtext">
+                        <p class="services-section__card-text">
                             Guided meditation sessions and stress management techniques.
                         </p>
                         <button type="button" class="services-section__btn">
@@ -100,14 +102,30 @@
                             <img src="./images/ill_services.png" alt="" class="hearts__img">
                         </div>
                     </div>
-                    <div class="services-section__therapy">
-                        <h3 class="services-section__subtitle">
+                    <div class="services-section__card-therapy">
+                        <h3 class="services-section__card-title">
                             One-on-One Therapy
                         </h3>
-                        <p class="services-section__subtext">
+                        <p class="services-section__card-text">
                             Virtual and in-person therapy sessions with licensed professionals.
                         </p>
                         <button type="button" class="services-section__btn">
+                            Learn more
+                        </button>
+                    </div>
+                    <div class="services-section__card-coach">
+                        <h3 class="services-section__card-coach-title">
+                            Wellness Coaching
+                        </h3>
+                        <p class="services-section__card-description">
+                           <span class="card-span"> Personalized guidance to help you build healthier habits, manage stress, and achieve balance in all areas of your life.</span>
+    
+                            Our wellness coaches support you in creating sustainable routines for mental, emotional, and physical well-being.
+                        </p>
+                        <div class="card__img">
+                            <img src="./images/ill_card.png" alt="coach card illustration">
+                        </div>
+                        <button type="button" class="card-button button">
                             Learn more
                         </button>
                     </div>
@@ -115,25 +133,134 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section class="testimonals-section">
         <div class="container">
-            <h1 class="title">
+            <div class="testimionals-section__container">
+                <div class="testimonals-section__content">
+                    <p class="testimonals__description description">
+                        TESTIMONIALS
+                    </p>
+                    <h2 class="testimonals-section__title title">
+                        What Our Clients Are Saying
+                    </h2>
+                    <p class="testimonals-section__text">
+                        Positive experiences from users who have benefited from therapy or wellness programs.
+                    </p>
+                    <div class="swiper-button-left arrow">
+                        <img src="./images/arrow-left.svg" alt="swiper button left" class="arrow-button-left">
+                    </div>
+                    <div class="swiper-button-right arrow">
+                        <img src="./images/arrow-right.svg" alt="" class="arrow-button-right">
+                    </div>
+                </div>
                 
-            </h1>
+                <div class="testimionals-section__slider swiper">
+                    <div class="swiper-wrapper">
+         
+                        <div class="swiper-slide">
+                            <div class="slide__item">
+                                <p class="slide-text">
+                                    "Solus made it so easy to find the right therapist for me. The sessions have truly transformed my mindset, and I feel more in control of my emotions than ever before!"
+                                </p>
+                                <p class="slide-name">
+                                    — Anna R., 32
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="slide__item">
+                                <p class="slide-text">
+                                    "I was struggling with stress and anxiety, but the mindfulness programs on Solus have helped me regain balance. I finally feel like I'm prioritizing my mental well-being."
+                                </p>
+                                <p class="slide-name">
+                                    — Mark S., 41
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="slide__item">
+                                <p class="slide-text">
+                                    "Solus made it so easy to find the right therapist for me. The sessions have truly transformed my mindset, and I feel more in control of my emotions than ever before!"
+                                </p>
+                                <p class="slide-name">
+                                    — Anna R., 32
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </section>
-    <section class="section">
+    <section class="partners-section">
         <div class="container">
-            <h1 class="title">
-                
-            </h1>
+            <div class="partners-section__container">
+                <p class="partners-section__text">
+                    Our Partners
+                </p>
+                <img src="./images/partners/wealthsimple.svg" alt="" class="partners-section__logo">
+                <img src="./images/partners/notion.svg" alt="" class="partners-section__logo">
+                <img src="./images/partners/medium.svg" alt="" class="partners-section__logo">
+                <img src="./images/partners/braze.svg" alt="" class="partners-section__logo">
+                <img src="./images/partners/sonos.svg" alt="" class="partners-section__logo">
+            </div>
         </div>
     </section>
-    <section class="section">
+    <section class="resources-section">
         <div class="container">
-            <h1 class="title">
-                
-            </h1>
+                <div class="resources-section__content">
+                    <p class="resources-section__description description">
+                        EXPLORE & LEARN
+                    </p>
+                    <h2 class="resources-section__title title">
+                        Resources for Your Well-being
+                    </h2>
+                    <p class="resources-section__text">
+                        Explore expert insights, self-care guides, and tools to support your mental health.
+                    </p>
+                </div>
+
+                <div class="articles">
+                    <article class="resources-section__card">
+                        <h3 class="card__title">
+                            Articles & Guides
+                        </h3>
+                        <p class="card__text">
+                            Practical tips on stress management, mindfulness, and emotional resilience.
+                        </p>
+                        <button type="button" class="card__button">
+                            Explore
+                        </button>
+                    </article>
+    
+                    <article class="resources-section__card">
+                        <h3 class="card__title">
+                            Meditation & Relaxation
+                        </h3>
+                        <p class="card__text">
+                            Audio sessions for guided meditation and deep breathing exercises.
+                        </p>
+                        <button type="button" class="card__button">
+                            Explore
+                        </button>
+                    </article>
+    
+                    <article class="resources-section__card">
+                        <h3 class="card__title">
+                            Webinars & Workshops
+                        </h3>
+                        <p class="card__text">
+                            Live and recorded sessions with mental health professionals.
+                        </p>
+                        <button type="button" class="card__button">
+                            Explore
+                        </button>
+                    </article>
+                </div>
         </div>
     </section>
     <section class="section">
@@ -146,5 +273,6 @@
     <footer>
 
     </footer>
+    <script src="./js/swiper.js" defer></script>
 </body>
 </html>
