@@ -824,5 +824,79 @@ details[open] .faq-icon {
     margin-top: 50px;
 }
 
+/* footer */
+.footer__container{
+    display: grid;
+    width: 1240px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px; 
+    padding: 120px 0 70px;
+}
 
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    width: 570px;
+    gap: 40px;
+    padding: 40px 60px;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+}
 
+.footer__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 18px;
+}
+
+.footer__nav ul li {
+    margin-bottom: 20px;
+}
+
+.footer__nav-list {
+    margin-right: 73px;
+    max-width: 94px;
+}
+
+.footer__nav-socials {
+    margin-right: 68px;
+    max-width: 90px;
+}
+
+.footer__nav-policy {
+    max-width: 125px;
+}
+
+.footer__copy {
+    color: #B8B8B8;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.footer__support {
+    position: relative;
+    width: 620px;
+    padding: 75px 70px 69px;
+    background-color: var(--color-primary-dark);
+    border-radius: 50px;
+}
+
+.footer__title {
+    font-size: 44px;
+    color: #FFFFFF;
+    max-width: 280px;
+    margin-bottom: 50px;
+}
+
+.footer__img {
+    position: absolute;
+    right: -1px;
+    top: 36px;
+}
+
+.footer__btn {
+    width: 100%;
+    color: var(--color-primary-dark);
+    background-color: #FFFFFF;
+}
