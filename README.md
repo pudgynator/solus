@@ -1,6 +1,8 @@
 # Solus
 
-Solus is a landing page for a mental well-being service. Visitors can learn how to find a licensed therapist, explore wellness programs, and get in touch.
+Solus is a landing page for a mental well-being service. Visitors can learn how to find a licensed therapist, explore wellness programs, and get in touch. 
+
+The live site is at https://pudgynator.github.io/solus/.
 
 The page is a single static site built with HTML and CSS.
 
@@ -23,4 +25,4 @@ The desktop layout is a wide, centered page. On smaller screens the header turns
 
 ## View it locally
 
-Open `index.html` in a browser, or serve the folder:
+Open `index.html` in a browser.
